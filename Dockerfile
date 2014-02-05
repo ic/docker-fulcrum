@@ -30,5 +30,5 @@ VOLUME ["/fulcrum/db"]
 
 EXPOSE 3000
 WORKDIR /fulcrum
-CMD bundle exec rails server
+CMD bundle exec rails server -e production
 
