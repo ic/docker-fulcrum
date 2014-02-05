@@ -9,6 +9,7 @@ WARNING: This Dockerfile works, but I am not happy with it. Please consider it a
 * Odd: A JavaScript runtime is missing from Fulcrum, so I had to add one.
 * Unsatisfactory: The backend is SQLite3. I know what it means for a production environment. This was just easy for my current goal, and I had to focus on several other issues (see other points).
 * Dirty: The build never finishes under several configurations, so the current untidy build file. Note that SQLite3 is installed separately and added to the Gemfile. Not doing so results in no end to the build. I did not dig yet this issue.
+* Missing: Emails are not sent yet at this point, so the only account is the test one provided by Fulcrum out of the box.
 
 Fulcrum Configuration
 ---------------------
@@ -17,4 +18,5 @@ Fulcrum Configuration
 * SQLite3 database file in the VFS of the container, under /fulcrum/db.
 * Just installs the production gem environment.
 * Runs in production mode.
+* No solution right now for sending emails (confirmation, reminders, etc).
 
